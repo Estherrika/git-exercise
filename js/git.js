@@ -1,5 +1,13 @@
 'use script'
 
-function onBallClick(){
-    console.log('ball has been clicked');
+function onBallClick(elBall) {
+    var ballSize = elBall.innerText
+    var newBAllSize = `${+ballSize + 50}px`
+
+    elBall.style.width = newBAllSize
+    elBall.style.height = newBAllSize
+    
+    elBall.innerText = (+ballSize + 50)
+
+
 }
